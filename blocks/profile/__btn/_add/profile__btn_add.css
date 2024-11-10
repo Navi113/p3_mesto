@@ -1,0 +1,8 @@
+.profile__btn_add {
+  width: 150px;
+  height: 50px;
+  margin: 0 0 0 auto;
+  background-image: url(../../../../images/btn-add.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

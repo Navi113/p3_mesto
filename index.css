@@ -4,6 +4,20 @@
 /* page */
 @import url(./blocks/page/page.css);
 
+/* hover */
+@import url(./blocks/hover/hover.css);
+
 /* header */
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
+
+/* profile */
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__img/profile__img.css);
+@import url(./blocks/profile/__text-container/profile__text-container.css);
+@import url(./blocks/profile/__title/profile__title.css);
+@import url(./blocks/profile/__btn/profile__btn.css);
+@import url(./blocks/profile/__btn/_edit/profile__btn_edit.css);
+@import url(./blocks/profile/__btn/_add/profile__btn_add.css);
+@import url(./blocks/profile/__subtitle/profile__subtitle.css);
+

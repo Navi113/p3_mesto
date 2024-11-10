@@ -3,8 +3,7 @@
   height: 74px;
   margin: 0 auto;
   padding: 45px 10px 0;
-  border: 3px solid teal;
-  border-radius: 5px;
+  border-bottom: 1px solid #545454;
 }
 
 @media (768px <=width <=1024px) {
