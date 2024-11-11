@@ -3,3 +3,9 @@
   height: 120px;
   border-radius: 50%;
 }
+
+@media (width < 530px) {
+  .profile__img {
+    margin: 0 auto 26px;
+  }
+}

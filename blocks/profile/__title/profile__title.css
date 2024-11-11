@@ -6,3 +6,15 @@
   display: flex;
   align-items: baseline;
 }
+
+@media (425px <= width <= 768px) {
+  .profile__title {
+    font-size: 30px;
+  }
+}
+
+@media (width < 425px) {
+  .profile__title {
+    font-size: 27px;
+  }
+}

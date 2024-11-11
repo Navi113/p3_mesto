@@ -1,3 +1,16 @@
 .profile__text-container  {
   margin: 0 0 0 30px;
 }
+
+@media (530px <= width <= 768px) {
+  .profile__text-container {
+    margin: 0 0 0 15px;
+  }
+}
+
+@media (width < 530px) {
+  .profile__text-container {
+    margin: 0 auto 36px;
+    text-align: center;
+  }
+}

@@ -1,9 +1,14 @@
 .profile {
   max-width: 900px;
-  height: 200px;
   margin: 0 auto;
   padding: 40px 10px 0;
   display: flex;
   align-items: center;
-  border: 3px solid red;
+}
+
+@media (width < 530px) {
+  .profile {
+    padding: 38px 10px 0;
+    flex-direction: column;
+  }
 }

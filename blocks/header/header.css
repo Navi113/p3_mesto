@@ -3,7 +3,6 @@
   height: 74px;
   margin: 0 auto;
   padding: 45px 10px 0;
-  border-bottom: 1px solid #545454;
 }
 
 @media (768px <=width <=1024px) {
@@ -12,14 +11,14 @@
   }
 }
 
-@media (425px <=width < 768px) {
+@media (530px <=width < 768px) {
   .header {
     padding: 25px 10px 0;
   }
 }
 
-@media (width < 425px) {
+@media (width < 530px) {
   .header {
-    padding: 15px 10px 0;
+    padding: 15px 0 0;
   }
 }
