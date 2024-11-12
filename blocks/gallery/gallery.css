@@ -1,10 +1,11 @@
 .gallery {
   max-width: 880px;
   margin: 0 auto;
-  padding: 50px 0 0;
+  padding: 50px 10px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 282px);
   gap: 17px;
   justify-content: center;
-  border: 1px solid teal;
 }
+
+/* TODO сделать адаптив для карточек, чтобы при разрешении меньше 583px карточка растягивалась на 90% */
