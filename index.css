@@ -22,3 +22,10 @@
 @import url(./blocks/profile/__btn/_add/profile__btn_add.css);
 @import url(./blocks/profile/__subtitle/profile__subtitle.css);
 
+/* gallery */
+@import url(./blocks/gallery/gallery.css);
+@import url(./blocks/gallery/__item/gallery__item.css);
+@import url(./blocks/gallery/__item-img/gallery__item-img.css);
+@import url(./blocks/gallery/__item-info-container/gallery__item-info-container.css);
+@import url(./blocks/gallery/__item-title/gallery__item-title.css);
+@import url(./blocks/gallery/__item-like-btn/galery__item-like-btn.css);

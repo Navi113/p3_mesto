@@ -1,0 +1,7 @@
+.gallery__item {
+  overflow: hidden;
+  height: 361px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1ps solid green;
+}
