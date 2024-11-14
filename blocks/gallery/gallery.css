@@ -8,4 +8,11 @@
   justify-content: center;
 }
 
+@media (width <=600px) {
+  .gallery {
+    display: block;
+    padding: 36px 10px 0;
+  }
+}
+
 /* TODO сделать адаптив для карточек, чтобы при разрешении меньше 583px карточка растягивалась на 90% */

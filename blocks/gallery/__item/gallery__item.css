@@ -3,5 +3,14 @@
   height: 361px;
   border-radius: 10px;
   background-color: #fff;
-  border: 1ps solid green;
+}
+
+@media (width <= 600px) {
+  .gallery__item {
+    margin: 0 auto 20px;
+  }
+
+  .gallery__item:last-child {
+    margin: 0 auto;
+  }
 }
