@@ -4,4 +4,10 @@
   line-height: 1.2;
   color: #000;
   margin: 0;
+  /* перенос текста в переполненом контейнере */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
+/* TODO доделать паддинг у сердечка и подвал */
