@@ -5,20 +5,15 @@
   padding: 45px 10px 0;
 }
 
-@media (768px <= width <= 024px) {
+@media (900px <=width <=1024px) {
   .header {
     padding: 35px 10px 0;
   }
 }
 
-@media (530px <= width < 768px) {
+@media (width < 900px) {
   .header {
+    max-width: 580px;
     padding: 25px 10px 0;
-  }
-}
-
-@media (width < 530px) {
-  .header {
-    padding: 15px 0 0;
   }
 }
