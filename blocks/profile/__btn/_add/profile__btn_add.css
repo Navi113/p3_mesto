@@ -8,7 +8,7 @@
   background-size: 16px 16px;
 }
 
-@media (530px <= width <= 768px) {
+@media (530px <= width <= 900px) {
   .profile__btn_add {
     width: 100px;
     height: 30px;

@@ -2,7 +2,7 @@
   margin: 0 0 0 30px;
 }
 
-@media (530px <= width <= 768px) {
+@media (530px <= width <= 900px) {
   .profile__text-container {
     margin: 0 0 0 15px;
   }

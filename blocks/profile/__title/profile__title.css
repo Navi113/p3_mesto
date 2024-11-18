@@ -7,7 +7,7 @@
   align-items: baseline;
 }
 
-@media (425px <= width <= 768px) {
+@media (425px <= width <= 900px) {
   .profile__title {
     font-size: 30px;
   }
