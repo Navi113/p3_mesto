@@ -4,14 +4,9 @@
   padding: 66px 0 60px;
 }
 
-@media (768px <= width <= 1024px) {
+@media (width < 900px) {
   .footer {
-    padding: 50px 10px 40px;
-  }
-}
-
-@media (width < 768px) {
-  .footer {
+    max-width: 580px;
     padding: 48px 10px 36px;
   }
 }
