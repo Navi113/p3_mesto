@@ -5,4 +5,5 @@
   background-color: #fff;
   background-image: url(./../../../images/like-btn.svg);
   background-repeat: no-repeat;
+  padding: 0;
 }

@@ -29,3 +29,7 @@
 @import url(./blocks/gallery/__item-info-container/gallery__item-info-container.css);
 @import url(./blocks/gallery/__item-title/gallery__item-title.css);
 @import url(./blocks/gallery/__item-like-btn/galery__item-like-btn.css);
+
+/* footer */
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__info/footer__info.css);

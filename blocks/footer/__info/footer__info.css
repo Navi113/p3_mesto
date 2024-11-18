@@ -1,0 +1,16 @@
+.footer__info {
+  font-size: 18px;
+  color: rgb(84, 84, 84);
+}
+
+@media (425px <= width <= 768px) {
+  .font__info {
+    font-size: 16px;
+  }
+}
+
+@media (width < 425px) {
+  .font__info {
+    font-size: 14px;
+  }
+}
