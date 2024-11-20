@@ -1,0 +1,24 @@
+.popup__input-data {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+  border: 0;
+  border-bottom: 3px solid rgb(0 0 0 / 0.2);
+  margin: 0 0 30px;
+  padding: 0 0 13px;
+  outline: none;
+}
+
+.popup__input-data:nth-of-type(2) {
+  margin: 0 0 48px;
+}
+
+.popup__input-data:hover {
+border-bottom: 3px solid #000;
+}
+
+.popup__input-data:focus {
+  border-bottom: 3px solid rgb(17, 255, 0);
+}
