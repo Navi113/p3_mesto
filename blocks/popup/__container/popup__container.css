@@ -10,3 +10,10 @@
   justify-content: flex-start;
   box-sizing: border-box;
 }
+
+@media (width <= 468px) {
+  .popup__container {
+    width: calc(100% - 38px);
+    padding: 25px 22px;
+  }
+}

@@ -6,6 +6,16 @@
   right: -40px;
   background-image: url(../../../images/btn-cls.svg);
   background-position: center;
-  background-color: #000;
+  background-size: cover;
+  background-color: transparent; /* прозрачный фон кнопки */
   border: 0;
+}
+
+@media (width < 530px) {
+  .popup__btn-cls {
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    right: 0;
+  }
 }

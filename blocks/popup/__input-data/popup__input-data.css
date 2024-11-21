@@ -9,6 +9,7 @@
   margin: 0 0 30px;
   padding: 0 0 13px;
   outline: none;
+  transition: border-bottom .2s linear;
 }
 
 .popup__input-data:nth-of-type(2) {
@@ -16,9 +17,15 @@
 }
 
 .popup__input-data:hover {
-border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000;
 }
 
 .popup__input-data:focus {
   border-bottom: 3px solid rgb(17, 255, 0);
+}
+
+@media (width <= 460px) {
+  .popup__input-data:nth-of-type(2) {
+    margin: 0 0 46px;
+  }
 }
