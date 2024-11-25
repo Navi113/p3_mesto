@@ -1,6 +1,7 @@
 .footer__info {
   font-size: 18px;
   color: rgb(84, 84, 84);
+  margin: 0;
 }
 
 @media (425px <= width <= 768px) {

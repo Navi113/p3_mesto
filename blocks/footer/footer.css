@@ -1,12 +1,6 @@
 .footer {
   max-width: 900px;
   margin: 0 auto;
-  padding: 66px 0 60px;
-}
-
-@media (width < 900px) {
-  .footer {
-    max-width: 580px;
-    padding: 48px 10px 36px;
-  }
+  padding: 60px 10px;
+  box-sizing: border-box;
 }

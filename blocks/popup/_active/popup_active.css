@@ -1,0 +1,4 @@
+.popup_active {
+  visibility: visible; /*так плавно открывается popup*/
+  opacity: 1; /*так плавно открывается popup*/
+}

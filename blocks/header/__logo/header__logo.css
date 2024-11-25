@@ -2,9 +2,3 @@
   width: 142px;
   height: 33px;
 }
-
-@media (width< 530px) {
-  .header__logo {
-    padding: 10px;
-  }
-}

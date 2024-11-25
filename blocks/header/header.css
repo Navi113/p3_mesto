@@ -1,19 +1,9 @@
 .header {
   max-width: 900px;
-  height: 74px;
+  min-height: 74px;
   margin: 0 auto;
-  padding: 45px 10px 0;
-}
-
-@media (900px <=width <=1024px) {
-  .header {
-    padding: 35px 10px 0;
-  }
-}
-
-@media (width < 900px) {
-  .header {
-    max-width: 580px;
-    padding: 25px 10px 0;
-  }
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(84 84 84 / .7);
+  /* border: 3px solid green; */
 }

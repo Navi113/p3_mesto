@@ -1,16 +1,8 @@
 .gallery {
   max-width: 880px;
   margin: 0 auto;
-  padding: 50px 10px 0;
+  padding: 50px 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 282px);
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 17px;
-  justify-content: center;
-}
-
-@media (width <= 600px) {
-  .gallery {
-    display: block;
-    padding: 36px 10px 0;
-  }
 }

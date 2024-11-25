@@ -1,0 +1,28 @@
+.popup__button-close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background-image: url(../../../images/btn-cls.svg);
+  background-position: center;
+  background-size: contain;
+  background-color: transparent; /* прозрачный фон кнопки */
+  border: 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.popup__button-close:hover {
+  opacity: .7;
+}
+
+@media (width < 530px) {
+  .popup__button-close {
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    right: 0;
+  }
+}
