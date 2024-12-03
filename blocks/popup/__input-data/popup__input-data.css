@@ -12,6 +12,9 @@
   outline: none;
   transition: border-bottom .2s linear;
   text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .popup__input-data:nth-of-type(2) {

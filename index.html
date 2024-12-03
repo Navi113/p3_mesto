@@ -18,6 +18,7 @@
     <header class="header">
       <img src="./images/Logo.svg" alt="Логотип" class="header__logo">
     </header>
+
     <main class="content">
       <section class="profile">
         <img src="./images/Jacques-Yves Cousteau.png" alt="Фото профиля" class="profile__photo">
@@ -28,7 +29,16 @@
         </div>
         <button class="profile__button-add" type="button"></button>
       </section>
+
       <section class="gallery">
+        <!-- <article class="card">
+          <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
+          <div class="card__info-container">
+            <h3 class="card__title">Карачавевск олололололо</h3>
+            <button class="card__like-button"></button>
+          </div>
+        </article>
+
         <article class="card">
           <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
           <div class="card__info-container">
@@ -36,6 +46,7 @@
             <button class="card__like-button"></button>
           </div>
         </article>
+
         <article class="card">
           <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
           <div class="card__info-container">
@@ -43,7 +54,7 @@
             <button class="card__like-button"></button>
           </div>
         </article>
-        </article>
+
         <article class="card">
           <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
           <div class="card__info-container">
@@ -51,7 +62,7 @@
             <button class="card__like-button"></button>
           </div>
         </article>
-        </article>
+
         <article class="card">
           <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
           <div class="card__info-container">
@@ -59,50 +70,87 @@
             <button class="card__like-button"></button>
           </div>
         </article>
-        </article>
+
         <article class="card">
           <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
           <div class="card__info-container">
             <h3 class="card__title">Карачавевск олололололо</h3>
             <button class="card__like-button"></button>
           </div>
-        </article>
-        </article>
-        <article class="card">
-          <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
-          <div class="card__info-container">
-            <h3 class="card__title">Карачавевск олололололо</h3>
-            <button class="card__like-button"></button>
-          </div>
-        </article>
+        </article> -->
       </section>
     </main>
+
     <footer class="footer">
       <p class="footer__info">
         &copy;&nbsp;2024 Mesto Russia Navi V.
       </p>
     </footer>
+
     <div class="popup" id="popup-user-info">
       <form id="form-user-info" action="" class="popup__container">
         <h4 class="popup__title">Редактировать профиль</h4>
-        <input type="text" name="name" id="name" class="popup__input-data" placeholder="Имя" required>
-        <input type="text" name="description" id="description" class="popup__input-data" placeholder="Ваше призвание?"
-          required>
+        <input 
+          type="text" 
+          name="name" 
+          id="name" 
+          class="popup__input-data" 
+          laceholder="Имя" 
+          minlength="2"
+          maxlength="20"
+          required
+        >
+        <input 
+          type="text" 
+          name="description" 
+          id="description" 
+          class="popup__input-data" 
+          placeholder="Ваше призвание?"
+          minlength="2"
+          maxlength="20"
+          required
+        >
         <button type="submit" class="popup__button-submit" id="button-submit-user-info">Сохранить</button>
         <button class="popup__button-close" id="button-close-user-info"></button>
       </form>
     </div>
+
     <div class="popup" id="popup-photo-info">
       <form id="form-photo-info" action="" class="popup__container">
         <h4 class="popup__title">Новое место</h4>
-        <input type="text" name="name-photo" id="name-photo" class="popup__input-data" placeholder="Название" required>
-        <input type="text" name="url-photo" id="url-photo" class="popup__input-data" placeholder="Ссылка на картинку"
-          required>
+        <input 
+          type="text" 
+          name="name-photo" 
+          id="name-photo" 
+          class="popup__input-data" 
+          placeholder="Название" 
+          minlength="2"
+          maxlength="20"
+          required
+        >
+        <input 
+          type="text" 
+          name="url-photo" 
+          id="url-photo" 
+          class="popup__input-data" 
+          placeholder="Ссылка на картинку"
+          required
+        >
         <button type="submit" class="popup__button-submit" id="button-submit-photo-info">Сохранить</button>
         <button class="popup__button-close" id="button-close-photo-info"></button>
       </form>
     </div>
   </div>
+
+  <template id="template">
+    <article class="card">
+      <img src="./images/gallery-karachaevsk.png" alt="Карачаевск" class="card__photo">
+      <div class="card__info-container">
+        <h3 class="card__title">Карачавевск олололололо</h3>
+        <button class="card__like-button"></button>
+      </div>
+    </article>
+  </template>
 
   <script src="./script.js"></script>
 </body>
