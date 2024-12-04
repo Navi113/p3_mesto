@@ -11,4 +11,5 @@
   visibility: hidden;  /*так плавно открывается popup*/
   opacity: 0; /*так плавно открывается popup*/
   transition: visibility 0s, .2s linear; /*так плавно открывается popup*/
+  z-index: 2;
 }
