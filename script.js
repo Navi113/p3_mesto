@@ -1,29 +1,28 @@
 // profile
-let profile = document.querySelector('.profile');
-let userName = profile.querySelector('.profile__title');
-let userJob = profile.querySelector('.profile__subtitle');
-let buttonEdit = profile.querySelector('.profile__button-edit');
-let buttonAdd = profile.querySelector('.profile__button-add');
+const profile = document.querySelector('.profile');
+const userName = profile.querySelector('.profile__title');
+const userJob = profile.querySelector('.profile__subtitle');
+const buttonEdit = profile.querySelector('.profile__button-edit');
+const buttonAdd = profile.querySelector('.profile__button-add');
 
 // popup edit-profile
-let popupUserInfo = document.querySelector('#popup-user-info');
-let formUserInfo = popupUserInfo.querySelector('#form-user-info');
-let nameInput = formUserInfo.querySelector('#name');
-let jobInput = formUserInfo.querySelector('#description');
-let buttonSbmtUserInfo = formUserInfo.querySelector('#button-submit-user-info');
-let buttonClsUserInfo = formUserInfo.querySelector('#button-close-user-info');
+const popupUserInfo = document.querySelector('#popup-user-info');
+const formUserInfo = popupUserInfo.querySelector('#form-user-info');
+const nameInput = formUserInfo.querySelector('#name');
+const jobInput = formUserInfo.querySelector('#description');
+const buttonSbmtUserInfo = formUserInfo.querySelector('#button-submit-user-info');
+const buttonClsUserInfo = formUserInfo.querySelector('#button-close-user-info');
 
 // popup add-photo
-let popupAddPhoto = document.querySelector('#popup-photo-info');
-let formGallery = popupAddPhoto.querySelector('#form-photo-info');
-let formNamePhoto = formGallery.querySelector('#name-photo');
-let formUrlPhoto = formGallery.querySelector('#url-photo');
-let buttonSbmtGallery = formGallery.querySelector('#button-submit-photo-info');
-let buttonClsGallery = formGallery.querySelector('#button-close-photo-info');
+const popupAddPhoto = document.querySelector('#popup-photo-info');
+const formGallery = popupAddPhoto.querySelector('#form-photo-info');
+const formNamePhoto = formGallery.querySelector('#name-photo');
+const formUrlPhoto = formGallery.querySelector('#url-photo');
+const buttonSbmtGallery = formGallery.querySelector('#button-submit-photo-info');
+const buttonClsGallery = formGallery.querySelector('#button-close-photo-info');
 
 // Card
-let gallery = document.querySelector('.gallery');
-
+const gallery = document.querySelector('.gallery');
 const initialCards = [
   {
     name: 'Архыз',
@@ -96,11 +95,6 @@ function handleFormSubmitUserInfo(evt) {
   popupUserInfo.classList.remove('popup_active');
 }
 
-// ф-я поставить лайк
-function takeLike() {
-  buttonLike.classList.toggle('card__like-button_active');
-}
-
 // ф-я добавить новое фото в галлерею
 function addPhoto(nameValue, photoValue) {
   const template = document.querySelector('#template').content; // наши шаблон и его содержимое
@@ -110,6 +104,11 @@ function addPhoto(nameValue, photoValue) {
   cardElement.querySelector('.card__title').textContent = nameValue; // вставили значение из формы в клонированную разметку
   cardElement.querySelector('.card__like-button').addEventListener('click', function (evt) { // слушатель на кнопку лайка в клонированной разметке
     evt.target.classList.toggle('card__like-button_active'); // смена класса у конкретной выбранной иконки лайка
+  });
+
+  cardElement.querySelector('.card__delete-button').addEventListener('click', function () { // сдушатель на кнопку удалить с функцией удаления конкретной карты
+    const cardItem = cardElement.querySelector('.card__delete-button').closest('.card'); // в создающейся карте нахожу ближайший элемент к кнопке удалить
+    cardItem.remove(); // удаляю его по клику на кнопку удалить
   });
 
   nameValue.value = ''; //чистим поля формы
